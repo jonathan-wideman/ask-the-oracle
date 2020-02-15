@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from '../Header';
-import OracleList from '../OracleList';
+import OracleList from '../oracle-list/OracleList';
 import Store from '../../store/Store';
 
 const App = () => {
