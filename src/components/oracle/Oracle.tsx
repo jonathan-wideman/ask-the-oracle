@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { misc as MiscUtils } from "../../utils/";
 import { IOracle } from '../../store/Store';
+import RollTableUtils from "./utils/roll-table";
 import './Oracle.css';
-import Dice from '../../modules/dice/dice';
 
 interface IProps {
   oracle: IOracle
@@ -24,30 +24,13 @@ class Oracle extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     // Don't call this.setState() here!
-    this.state = { result: this.getRollResult(this.getRoll()) };
+    this.state = { result: RollTableUtils.rollResult(this.props.oracle) };
 
     this.roll = this.roll.bind(this);
   }
 
   public roll(): void {
-    this.setState({ result: this.getRollResult(this.getRoll())})
-  }
-
-  getRandomInt(min: number, max: number): number {
-    // FIXME: not properly rounded
-    return Math.round(Math.random() * (max - min) + min);
-  }
-
-  getRoll(): number {
-    return Dice.roll(10);
-  }
-
-  getRollResult(roll: number): string {
-    return this.props.oracle.table.find((item) => this.isRollInRange(roll.toString(), item.roll))?.result ?? 'NOPE';
-  }
-
-  isRollInRange(roll: string, range: string): boolean {
-    return range.includes(roll);
+    this.setState({ result: RollTableUtils.rollResult(this.props.oracle)})
   }
 
   public render() {
