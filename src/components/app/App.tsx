@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from '../../images/logo.svg';
 import './App.css';
-import Header from '../header/Header';
-import OracleList from '../oracle-list/OracleList';
+import { Header } from '../';
+import { OracleList } from '../';
 import Store from '../../store/Store';
 
 const App = () => {

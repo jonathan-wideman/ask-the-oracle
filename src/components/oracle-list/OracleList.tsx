@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IOracle } from '../../store/Store';
-import Oracle from '../oracle/Oracle';
+import { Oracle } from '../';
 
 interface IProps {
   countBy?: number;

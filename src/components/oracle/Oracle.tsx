@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { misc as MiscUtils } from "../../utils/index";
+import { misc as MiscUtils } from "../../utils/";
 import { IOracle } from '../../store/Store';
 import './Oracle.css';
 import Dice from '../../modules/dice/dice';
