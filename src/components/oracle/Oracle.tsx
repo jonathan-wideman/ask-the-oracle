@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { formatOracleTitle } from '../../utils/utils';
+import { misc as MiscUtils } from "../../utils/index";
 import { IOracle } from '../../store/Store';
 import './Oracle.css';
 
@@ -52,7 +52,7 @@ class Oracle extends React.Component<IProps, IState> {
   public render() {
     return (
       <li className="Oracle" onClick={this.roll}>
-        {formatOracleTitle(this.props.oracle.title)}
+        {MiscUtils.formatOracleTitle(this.props.oracle.title)}
         {/* <ul>{this.props.oracle.table.map((item) => <li>{item.roll}: {item.result}</li>)}</ul> */}
         : {this.state.result}
       </li>

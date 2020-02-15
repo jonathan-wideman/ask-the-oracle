@@ -6,10 +6,15 @@
 //   return this.toLowerCase().replace(/\b[a-z]/g, (match) => match.toLocaleUpperCase());
 // }
 
-export function toTitleCase(s: string): string {
+const toTitleCase = function(s: string): string {
   return s.toLowerCase().replace(/\b[a-z]/g, (match) => match.toLocaleUpperCase());
 }
 
-export function formatOracleTitle(title: string): string {
+const formatOracleTitle = function(title: string): string {
   return toTitleCase(title.slice(title.lastIndexOf(':') + 1).trim());
+}
+
+export default {
+  toTitleCase,
+  formatOracleTitle
 }
