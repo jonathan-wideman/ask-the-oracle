@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import OracleList from './components/OracleList';
-import Store from './store/Store';
+import Header from '../Header';
+import OracleList from '../OracleList';
+import Store from '../../store/Store';
 
 const App = () => {
 	return (
