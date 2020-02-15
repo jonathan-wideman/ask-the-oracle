@@ -2,6 +2,7 @@ import * as React from 'react';
 import { misc as MiscUtils } from "../../utils/index";
 import { IOracle } from '../../store/Store';
 import './Oracle.css';
+import Dice from '../../modules/dice/dice';
 
 interface IProps {
   oracle: IOracle
@@ -38,7 +39,7 @@ class Oracle extends React.Component<IProps, IState> {
   }
 
   getRoll(): number {
-    return this.getRandomInt(0, 10);
+    return Dice.roll(10);
   }
 
   getRollResult(roll: number): string {
