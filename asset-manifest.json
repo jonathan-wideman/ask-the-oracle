@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ask-the-oracle/static/css/main.2367e55f.chunk.css",
+    "main.js": "/ask-the-oracle/static/js/main.4f9bec97.chunk.js",
+    "main.js.map": "/ask-the-oracle/static/js/main.4f9bec97.chunk.js.map",
+    "runtime-main.js": "/ask-the-oracle/static/js/runtime-main.7796ceec.js",
+    "runtime-main.js.map": "/ask-the-oracle/static/js/runtime-main.7796ceec.js.map",
+    "static/js/2.84c29406.chunk.js": "/ask-the-oracle/static/js/2.84c29406.chunk.js",
+    "static/js/2.84c29406.chunk.js.map": "/ask-the-oracle/static/js/2.84c29406.chunk.js.map",
+    "index.html": "/ask-the-oracle/index.html",
+    "precache-manifest.4d84b0918913ef49cbc52c24c3e7fbd7.js": "/ask-the-oracle/precache-manifest.4d84b0918913ef49cbc52c24c3e7fbd7.js",
+    "service-worker.js": "/ask-the-oracle/service-worker.js",
+    "static/css/main.2367e55f.chunk.css.map": "/ask-the-oracle/static/css/main.2367e55f.chunk.css.map",
+    "static/js/2.84c29406.chunk.js.LICENSE.txt": "/ask-the-oracle/static/js/2.84c29406.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7796ceec.js",
+    "static/js/2.84c29406.chunk.js",
+    "static/css/main.2367e55f.chunk.css",
+    "static/js/main.4f9bec97.chunk.js"
+  ]
+}
