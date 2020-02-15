@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da6fca97959de9d696cc85359a9fcf2c",
+    "revision": "c23e5baaed46b4c24abe0c4e7c427e84",
     "url": "/ask-the-oracle/index.html"
   },
   {
