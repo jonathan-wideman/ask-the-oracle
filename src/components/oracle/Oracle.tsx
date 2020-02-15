@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { formatOracleTitle } from '../../utility/utility';
+import { formatOracleTitle } from '../../utils/utils';
 import { IOracle } from '../../store/Store';
 import './Oracle.css';
 
