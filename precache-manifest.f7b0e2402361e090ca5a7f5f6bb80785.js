@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7e666e61a94900331b84c1ad925f858",
+    "revision": "4c190afc13cfc95bb0358fa496666733",
     "url": "/ask-the-oracle/index.html"
   },
   {
-    "revision": "d605026b1f2bdfb34116",
+    "revision": "4bd17a455c2f2c187f62",
     "url": "/ask-the-oracle/static/css/main.2367e55f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ask-the-oracle/static/js/2.a47cceda.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d605026b1f2bdfb34116",
-    "url": "/ask-the-oracle/static/js/main.00a32f79.chunk.js"
+    "revision": "4bd17a455c2f2c187f62",
+    "url": "/ask-the-oracle/static/js/main.d11c12f0.chunk.js"
   },
   {
     "revision": "7c05b82ca0b6b0a2d59e",

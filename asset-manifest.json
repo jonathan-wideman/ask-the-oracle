@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ask-the-oracle/static/css/main.2367e55f.chunk.css",
-    "main.js": "/ask-the-oracle/static/js/main.00a32f79.chunk.js",
-    "main.js.map": "/ask-the-oracle/static/js/main.00a32f79.chunk.js.map",
+    "main.js": "/ask-the-oracle/static/js/main.d11c12f0.chunk.js",
+    "main.js.map": "/ask-the-oracle/static/js/main.d11c12f0.chunk.js.map",
     "runtime-main.js": "/ask-the-oracle/static/js/runtime-main.7796ceec.js",
     "runtime-main.js.map": "/ask-the-oracle/static/js/runtime-main.7796ceec.js.map",
     "static/js/2.a47cceda.chunk.js": "/ask-the-oracle/static/js/2.a47cceda.chunk.js",
     "static/js/2.a47cceda.chunk.js.map": "/ask-the-oracle/static/js/2.a47cceda.chunk.js.map",
     "index.html": "/ask-the-oracle/index.html",
-    "precache-manifest.3312da8c1789dd01c6f5b66cdd3686a6.js": "/ask-the-oracle/precache-manifest.3312da8c1789dd01c6f5b66cdd3686a6.js",
+    "precache-manifest.f7b0e2402361e090ca5a7f5f6bb80785.js": "/ask-the-oracle/precache-manifest.f7b0e2402361e090ca5a7f5f6bb80785.js",
     "service-worker.js": "/ask-the-oracle/service-worker.js",
     "static/css/main.2367e55f.chunk.css.map": "/ask-the-oracle/static/css/main.2367e55f.chunk.css.map",
     "static/js/2.a47cceda.chunk.js.LICENSE.txt": "/ask-the-oracle/static/js/2.a47cceda.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7796ceec.js",
     "static/js/2.a47cceda.chunk.js",
     "static/css/main.2367e55f.chunk.css",
-    "static/js/main.00a32f79.chunk.js"
+    "static/js/main.d11c12f0.chunk.js"
   ]
 }
