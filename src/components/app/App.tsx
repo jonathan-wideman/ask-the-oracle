@@ -7,7 +7,7 @@ import Oracle from '../oracle/Oracle';
 
 const App = () => {
 	return (
-		<Router>
+		<Router basename='/ask-the-oracle'>
 			<div className="App">
 				<div className="App-nav">
 					<ul>

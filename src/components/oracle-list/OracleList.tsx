@@ -43,7 +43,7 @@ class OracleList extends React.Component<IProps, IState> {
       <ul>
         {this.props.oracles.map((oracle) =>
           <li>
-            <Link to={MiscUtils.formatOracleTitleAsUrl(oracle.title)}>
+            <Link to={'/oracles/' + MiscUtils.formatOracleTitleAsUrl(oracle.title)}>
               {MiscUtils.formatOracleTitle(oracle.title)}
             </Link>
           </li>)}
