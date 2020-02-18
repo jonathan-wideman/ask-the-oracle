@@ -1,5 +1,7 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom'
 import { IOracle } from '../../store/Store';
+import { misc as MiscUtils } from "../../utils/";
 import { Oracle } from '../';
 
 interface IProps {
@@ -39,7 +41,13 @@ class OracleList extends React.Component<IProps, IState> {
   public render() {
     return (
       <ul>
-        {this.props.oracles.map((oracle) => <Oracle oracle={oracle}></Oracle>)}
+        {this.props.oracles.map((oracle) =>
+          <li>
+            <Link to={MiscUtils.formatOracleTitleAsUrl(oracle.title)}>
+              {MiscUtils.formatOracleTitle(oracle.title)}
+            </Link>
+          </li>)}
+        {/* {this.props.oracles.map((oracle) => <Oracle oracle={oracle}></Oracle>)} */}
       </ul>
     );
   }

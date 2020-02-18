@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from '../../images/logo.svg';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import './App.css';
 import Store from '../../store/Store';
 import { Home, OracleList } from '..';
+import Oracle from '../oracle/Oracle';
 
 const App = () => {
 	return (
-		<div className="App">
-
-			{/* <header className="App-header">
-				<Header name="Ironsworn" />
-				<img src={logo} className="App-logo" alt="logo" />
-			</header> */}
-
-			<div className="App-content">
-
-
-				<Home/>
-				<OracleList oracles={Store.oracles}/>
-
+		<Router>
+			<div className="App">
+				<div className="App-nav">
+					<ul>
+						<li>
+							<Link to='/'>Home</Link>
+						</li>
+						<li>
+							<Link to='/oracles'>Oracles</Link>
+						</li>
+					</ul>
+				</div>
+				<div className="App-content">
+					<Switch>
+						<Route exact path='/' component={Home}></Route>
+						<Route exact path='/oracles'><OracleList oracles={Store.oracles}/></Route>
+						<Route exact path='/oracles/:id'><Oracle/></Route>
+					</Switch>
+				</div>
 			</div>
-		</div>
+		</Router>
 	);
 }
 

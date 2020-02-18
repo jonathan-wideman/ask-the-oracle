@@ -14,7 +14,12 @@ const formatOracleTitle = function(title: string): string {
   return toTitleCase(title.slice(title.lastIndexOf(':') + 1).trim());
 }
 
+const formatOracleTitleAsUrl = function(title: string): string {
+  return title.slice(title.lastIndexOf(':') + 1).trim().toLowerCase().replace(/\s/g, (match) => '-');
+}
+
 export default {
   toTitleCase,
-  formatOracleTitle
+  formatOracleTitle,
+  formatOracleTitleAsUrl
 }
