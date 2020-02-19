@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom'
 import './App.css';
 import Store from '../../store/Store';
 import { Home, OracleList } from '..';
@@ -10,20 +10,14 @@ const App = () => {
 		<Router basename='/ask-the-oracle'>
 			<div className="App">
 				<div className="App-nav">
-					<ul>
-						<li>
-							<Link to='/'>Home</Link>
-						</li>
-						<li>
-							<Link to='/oracles'>Oracles</Link>
-						</li>
-					</ul>
+					<NavLink exact to='/' className="Nav-link" activeClassName="Nav-link-active">Home</NavLink>
+					<NavLink exact to='/oracles' className="Nav-link" activeClassName="Nav-link-active">Oracles</NavLink>
 				</div>
 				<div className="App-content">
 					<Switch>
 						<Route exact path='/' component={Home}></Route>
-						<Route exact path='/oracles'><OracleList oracles={Store.oracles}/></Route>
-						<Route exact path='/oracles/:id'><Oracle/></Route>
+						<Route exact path='/oracles'><OracleList oracles={Store.oracles} /></Route>
+						<Route exact path='/oracles/:id'><Oracle /></Route>
 					</Switch>
 				</div>
 			</div>

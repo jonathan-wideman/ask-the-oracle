@@ -26,7 +26,7 @@
 
 .App-content {
   background-color: #282c34;
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +37,28 @@
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+}
+
+.App-nav {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.Nav-link {
+  color: #61dafb;
+  text-decoration: none;
+  padding: 3vh;
+}
+
+.Nav-link-active {
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -47,3 +69,5 @@
     transform: rotate(360deg);
   }
 }
+
+
